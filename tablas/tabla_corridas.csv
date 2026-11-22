@@ -1,0 +1,30 @@
+ID,Carpeta,Caso,Presión de salida [kPa],Dominio,Modelo físico,Malla,Celdas,CFL máx,Tiempo final [s],Ventana de promedio [s],Criterio de cierre,Papel en el reporte
+S_r1,caso_S_r1_p276_co01,S (subsónico no estrangulado),276,Interno (semidominio 2D),"Inviscido, compresible (rhoCentralFoam, Kurganov, van Leer)",r1,2600,0.1,0.1,0.04-0.10,"Ventanas <1 %, balance de masa <1 %, choque <0.5 % Ld",Referencia
+S_r2,caso_S_r2_p276_co01,S,276,Interno (semidominio 2D),"Inviscido, compresible (rhoCentralFoam, Kurganov, van Leer)",r2,10400,0.1,0.05,0.03-0.05,"Ventanas <1 %, balance de masa <1 %, choque <0.5 % Ld",Referencia
+A_r1,caso_A_r1_co01,A (supersónico adaptado),Salida supersónica (sin presión impuesta),Interno (semidominio 2D),"Inviscido, compresible (rhoCentralFoam, Kurganov, van Leer)",r1,2600,0.1,0.06,0.03-0.06,"Ventanas <1 %, balance de masa <1 %, choque <0.5 % Ld",Referencia
+A_r2,caso_A_r2_co01,A,Salida supersónica (sin presión impuesta),Interno (semidominio 2D),"Inviscido, compresible (rhoCentralFoam, Kurganov, van Leer)",r2,10400,0.1,0.04,0.02-0.04,"Ventanas <1 %, balance de masa <1 %, choque <0.5 % Ld",Referencia
+C_r1,caso_C_r1_co01,C (choque interno),200,Interno (semidominio 2D),"Inviscido, compresible (rhoCentralFoam, Kurganov, van Leer)",r1,2600,0.1,0.06,0.03-0.06,"Ventanas <1 %, balance de masa <1 %, choque <0.5 % Ld","Referencia, estudio de malla"
+C_r2,caso_C_r2_co01,C,200,Interno (semidominio 2D),"Inviscido, compresible (rhoCentralFoam, Kurganov, van Leer)",r2,10400,0.1,0.04,0.02-0.04,"Ventanas <1 %, balance de masa <1 %, choque <0.5 % Ld","Referencia, estudio de malla"
+C_r4,caso_C_r4_co01,C,200,Interno (semidominio 2D),"Inviscido, compresible (rhoCentralFoam, Kurganov, van Leer)",r4,41600,0.1,0.02,0.012-0.02,"Ventanas <1 %, balance de masa <1 %, choque <0.5 % Ld","Referencia, estudio de malla"
+A_r1_cfl03,caso_A_r1,A,Salida supersónica,Interno (semidominio 2D),"Inviscido, compresible (rhoCentralFoam, Kurganov, van Leer)",r1,2600,0.3,0.1,-,Ventanas estables,Sensibilidad al paso de tiempo
+A_r2_cfl03,caso_A_r2,A,Salida supersónica,Interno (semidominio 2D),"Inviscido, compresible (rhoCentralFoam, Kurganov, van Leer)",r2,10400,0.3,0.1,-,Ventanas estables,Sensibilidad al paso de tiempo
+C_r1_cfl05,caso_C_r1,C,200,Interno (semidominio 2D),"Inviscido, compresible (rhoCentralFoam, Kurganov, van Leer)",r1,2600,0.5,0.1,-,Ventanas estables,Sensibilidad al paso de tiempo
+C_r2_cfl05,caso_C_r2,C,200,Interno (semidominio 2D),"Inviscido, compresible (rhoCentralFoam, Kurganov, van Leer)",r2,10400,0.5,0.1,-,Ventanas estables,Sensibilidad al paso de tiempo
+C_r4_cfl05,caso_C_r4,C,200,Interno (semidominio 2D),"Inviscido, compresible (rhoCentralFoam, Kurganov, van Leer)",r4,41600,0.5,0.08,-,Ventanas estables,Sensibilidad al paso de tiempo
+S_r1_cfl03,caso_S_r1_p276_base,S,276,Interno (semidominio 2D),"Inviscido, compresible (rhoCentralFoam, Kurganov, van Leer)",r1,2600,0.3,0.06,-,-,Sensibilidad al paso de tiempo
+S_r2_cfl03,caso_S_r2_p276,S,276,Interno (semidominio 2D),"Inviscido, compresible (rhoCentralFoam, Kurganov, van Leer)",r2,10400,0.3,0.06,-,-,Sensibilidad al paso de tiempo
+S_r2_p290,caso_S_r2,S,290,Interno (semidominio 2D),"Inviscido, compresible (rhoCentralFoam, Kurganov, van Leer)",r2,10400,0.3,0.06,-,-,Sensibilidad a la contrapresión
+S_r2_p280,caso_S_r2_p280,S,280,Interno (semidominio 2D),"Inviscido, compresible (rhoCentralFoam, Kurganov, van Leer)",r2,10400,0.3,0.06,-,-,Sensibilidad a la contrapresión
+S_r2_p273,caso_S_r2_p273,S,273,Interno (semidominio 2D),"Inviscido, compresible (rhoCentralFoam, Kurganov, van Leer)",r2,10400,0.3,0.06,-,-,Sensibilidad a la contrapresión
+S_r1_minmod,caso_S_r1_p276_minmod,S,276,Interno (semidominio 2D),"Inviscido, compresible (rhoCentralFoam, Kurganov, Minmod)",r1,2600,0.3,0.06,-,-,Sensibilidad al limitador
+S_r1_tadmor,caso_S_r1_p276_tadmor,S,276,Interno (semidominio 2D),"Inviscido, compresible (rhoCentralFoam, Tadmor, van Leer)",r1,2600,0.3,0.06,-,-,Sensibilidad al esquema de flujo
+S_r2_wt005,caso_S_r2_p276_wt005,S,"276 (waveTransmissive, lInf 0.05)",Interno (semidominio 2D),"Inviscido, compresible (rhoCentralFoam, Kurganov, van Leer)",r2,10400,0.3,0.06,-,-,Condición de salida descartada
+S_r2_wt020,caso_S_r2_p276_wt020,S,"276 (waveTransmissive, lInf 0.20)",Interno (semidominio 2D),"Inviscido, compresible (rhoCentralFoam, Kurganov, van Leer)",r2,10400,0.3,0.06,-,-,Condición de salida descartada
+S_r2_wt045,caso_S_r2_p276_wt045,S,"276 (waveTransmissive, lInf 0.45)",Interno (semidominio 2D),"Inviscido, compresible (rhoCentralFoam, Kurganov, van Leer)",r2,10400,0.3,0.06,-,-,Condición de salida descartada
+A_r1_cfl02,caso_dt_A_r1_co02,A,Salida supersónica,Interno (semidominio 2D),"Inviscido, compresible (rhoCentralFoam, Kurganov, van Leer)",r1,2600,0.2,0.06,0.03-0.06,-,Orden del error en el paso de tiempo
+A_r1_cfl005,caso_dt_A_r1_co005,A,Salida supersónica,Interno (semidominio 2D),"Inviscido, compresible (rhoCentralFoam, Kurganov, van Leer)",r1,2600,0.05,0.06,0.03-0.06,-,Orden del error en el paso de tiempo
+C_r1_cfl02,caso_dt_C_r1_co02,C,200,Interno (semidominio 2D),"Inviscido, compresible (rhoCentralFoam, Kurganov, van Leer)",r1,2600,0.2,0.06,0.03-0.06,-,Orden del error en el paso de tiempo
+C_r1_cfl005,caso_dt_C_r1_co005,C,200,Interno (semidominio 2D),"Inviscido, compresible (rhoCentralFoam, Kurganov, van Leer)",r1,2600,0.05,0.06,0.03-0.06,-,Orden del error en el paso de tiempo
+S_r1_cfl02,caso_dt_S_r1_co02,S,276,Interno (semidominio 2D),"Inviscido, compresible (rhoCentralFoam, Kurganov, van Leer)",r1,2600,0.2,0.1,0.07-0.10,-,Orden del error en el paso de tiempo
+S_r1_cfl005,caso_dt_S_r1_co005,S,276,Interno (semidominio 2D),"Inviscido, compresible (rhoCentralFoam, Kurganov, van Leer)",r1,2600,0.05,0.1,0.07-0.10,-,Orden del error en el paso de tiempo
+S_r1_unif,caso_dt_S_r1_unif,S (campo inicial uniforme),276,Interno (semidominio 2D),"Inviscido, compresible (rhoCentralFoam, Kurganov, van Leer)",r1,2600,0.1,0.1,0.07-0.10,-,Independencia de la condición inicial

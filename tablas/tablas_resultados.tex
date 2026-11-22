@@ -1,0 +1,61 @@
+% Tablas de resultados del Nivel 1. Requiere \usepackage{booktabs,graphicx}.
+
+\begin{table}[htbp]
+\centering
+\caption{Errores de los perfiles CFD respecto a la teoría cuasi-unidimensional, balance de masa y gasto. Promedios en la ventana de tiempo indicada.}
+\label{tab:errores-perfiles}
+\scriptsize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrrrrrrrrr}
+\toprule
+Caso & Malla & Ventana [s] & Error $M$ medio [\%] & RMS $M$ [\%] & Error $p/p_{01}$ medio [\%] & Error $T/T_{01}$ medio [\%] & $\dot m$ CFD [kg/s] & $\dot m$ teoría [kg/s] & Error $\dot m$ [\%] & Balance de masa [\%] \\
+\midrule
+A & r1 & 0.03--0.06 & 0.22 & 0.26 & 0.27 & 0.07 & 0.17498 & 0.17502 & 0.022 & 0.000 \\
+A & r2 & 0.02--0.04 & 0.22 & 0.27 & 0.27 & 0.07 & 0.17497 & 0.17502 & 0.025 & 0.003 \\
+S & r1 & 0.04--0.1 & 0.08 & 0.10 & 0.07 & 0.03 & 0.15627 & 0.15642 & 0.097 & 0.000 \\
+S & r2 & 0.03--0.05 & 0.09 & 0.12 & 0.08 & 0.03 & 0.15629 & 0.15642 & 0.078 & 0.005 \\
+C & r1 & 0.03--0.06 & 0.20 & 0.25 & 0.23 & 0.06 & 0.17498 & 0.17502 & 0.022 & 0.000 \\
+C & r2 & 0.02--0.04 & 0.22 & 0.27 & 0.23 & 0.06 & 0.17497 & 0.17502 & 0.025 & 0.002 \\
+C & r4 & 0.012--0.02 & 0.21 & 0.27 & 0.25 & 0.07 & 0.17495 & 0.17502 & 0.040 & 0.001 \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Estado en la sección de salida: CFD (promedio de sección y de ventana) contra teoría cuasi-unidimensional.}
+\label{tab:estado-salida}
+\scriptsize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrrrrrrrrrrrrr}
+\toprule
+Caso & Malla & $x$ [m] & $M_e$ CFD & $M_e$ teo. & $p_e$ CFD [kPa] & $p_e$ teo. [kPa] & $T_e$ CFD [K] & $T_e$ teo. [K] & $V_e$ CFD [m/s] & $V_e$ teo. [m/s] & Err. $M_e$ [\%] & Err. $p_e$ [\%] & Err. $T_e$ [\%] & Err. $V_e$ [\%] \\
+\midrule
+A & r1 & 0.1987 & 1.9354 & 1.9352 & 42.47 & 42.40 & 171.49 & 171.53 & 508.0 & 508.0 & 0.01 & 0.17 & 0.02 & 0.00 \\
+A & r2 & 0.1994 & 1.9355 & 1.9352 & 42.46 & 42.40 & 171.48 & 171.52 & 508.0 & 508.0 & 0.01 & 0.16 & 0.02 & 0.00 \\
+S & r1 & 0.1987 & 0.3469 & 0.3472 & 275.92 & 276.00 & 292.94 & 292.94 & 119.0 & 119.1 & 0.08 & 0.03 & 0.00 & 0.08 \\
+S & r2 & 0.1994 & 0.3469 & 0.3472 & 275.96 & 276.00 & 292.93 & 292.94 & 119.0 & 119.1 & 0.09 & 0.01 & 0.00 & 0.09 \\
+C & r1 & 0.1987 & 0.5282 & 0.5280 & 199.97 & 200.00 & 284.16 & 284.15 & 178.5 & 178.4 & 0.03 & 0.01 & 0.00 & 0.03 \\
+C & r2 & 0.1994 & 0.5280 & 0.5280 & 200.00 & 200.00 & 284.16 & 284.16 & 178.4 & 178.4 & 0.01 & 0.00 & 0.00 & 0.01 \\
+C & r4 & 0.1997 & 0.5286 & 0.5280 & 199.96 & 200.00 & 284.12 & 284.16 & 178.6 & 178.4 & 0.10 & 0.02 & 0.01 & 0.10 \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Choque normal del caso C: posición, área y estados antes ($1$) y después ($2$) del choque, medidos a tres celdas de distancia, contra teoría evaluada en las mismas posiciones.}
+\label{tab:choque-C}
+\scriptsize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrrrrrrrrrrrrrrrrr}
+\toprule
+Malla & Ventana [s] & $x_s$ CFD [m] & $x_s$ teo. [m] & $x_s/L_d$ CFD & $x_s/L_d$ teo. & Err. pos. [\% $L_d$] & $A_s/A_t$ CFD & $A_s/A_t$ teo. & $M_{s1}$ CFD & $M_{s1}$ teo. & $M_{s2}$ CFD & $M_{s2}$ teo. & $p_2/p_1$ CFD & $p_2/p_1$ teo. & $p_{02}/p_{01}$ CFD & $p_{02}/p_{01}$ teo. & $x_1$ [m] & $x_2$ [m] \\
+\midrule
+r1 & 0.03--0.06 & 0.1353 & 0.1346 & 0.6767 & 0.6731 & 0.36 & 1.4581 & 1.4552 & 1.785 & 1.792 & 0.590 & 0.589 & 3.597 & 3.619 & 0.8100 & 0.8061 & 0.1287 & 0.1437 \\
+r2 & 0.02--0.04 & 0.1352 & 0.1346 & 0.6761 & 0.6731 & 0.30 & 1.4576 & 1.4552 & 1.799 & 1.804 & 0.601 & 0.600 & 3.637 & 3.655 & 0.8099 & 0.8061 & 0.1318 & 0.1393 \\
+r4 & 0.012--0.02 & 0.1353 & 0.1346 & 0.6766 & 0.6731 & 0.35 & 1.4580 & 1.4552 & 1.801 & 1.810 & 0.605 & 0.606 & 3.642 & 3.671 & 0.8105 & 0.8061 & 0.1334 & 0.1371 \\
+\bottomrule
+\end{tabular}}
+\end{table}
+

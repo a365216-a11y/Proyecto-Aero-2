@@ -1,0 +1,45 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    object      p;
+}
+
+dimensions      [1 -1 -2 0 0 0 0];
+
+internalField   uniform 200000;
+
+boundaryField
+{
+    inlet
+    {
+        type            totalPressure;
+        p0              uniform 300000;
+        value           uniform 300000;
+        rho             none;
+        psi             thermo:psi;
+        gamma           1.4;
+    }
+
+    outlet
+    {
+        type            fixedValue;
+        value           uniform 200000;
+    }
+
+    wall
+    {
+        type            zeroGradient;
+    }
+
+    symmetry
+    {
+        type            symmetryPlane;
+    }
+
+    frontAndBack
+    {
+        type            empty;
+    }
+}

@@ -1,0 +1,19 @@
+\begin{table}[htbp]
+\centering
+\caption{Corridas de referencia (Nivel 1). Todas con modelo inviscido compresible, \texttt{rhoCentralFoam}, dominio interno (semidominio 2D).}
+\label{tab:corridas}
+\small
+\begin{tabular}{llllrrl}
+\hline
+ID & Caso & $p_B$ [kPa] & Malla & Celdas & CFL & Ventana [s] \\
+\hline
+S\_r1 & S & 276 & r1 & 2600 & 0.1 & 0.04--0.10 \\
+S\_r2 & S & 276 & r2 & 10400 & 0.1 & 0.03--0.05 \\
+A\_r1 & A & sin imponer $p_B$ & r1 & 2600 & 0.1 & 0.03--0.06 \\
+A\_r2 & A & sin imponer $p_B$ & r2 & 10400 & 0.1 & 0.02--0.04 \\
+C\_r1 & C & 200 & r1 & 2600 & 0.1 & 0.03--0.06 \\
+C\_r2 & C & 200 & r2 & 10400 & 0.1 & 0.02--0.04 \\
+C\_r4 & C & 200 & r4 & 41600 & 0.1 & 0.012--0.02 \\
+\hline
+\end{tabular}
+\end{table}

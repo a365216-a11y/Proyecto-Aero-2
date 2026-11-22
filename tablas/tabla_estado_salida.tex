@@ -1,0 +1,39 @@
+\begin{table}[H]
+\centering
+\caption{Estado en la sección de salida: CFD (promedio de sección y de ventana) contra teoría cuasiunidimensional.}
+\label{tab:estado-salida}
+\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{tabular}{llrrrrrrrr}
+\toprule
+Caso & Malla & $M_e$ CFD & $M_e$ teo. & $p_e$ CFD [kPa] & $p_e$ teo. [kPa] & $T_e$ CFD [K] & $T_e$ teo. [K] & $V_e$ CFD [m/s] & $V_e$ teo. [m/s] \\
+\midrule
+A & r1 & 1.9354 & 1.9352 & 42.47 & 42.40 & 171.49 & 171.53 & 508.0 & 508.0 \\
+A & r2 & 1.9355 & 1.9352 & 42.46 & 42.40 & 171.48 & 171.52 & 508.0 & 508.0 \\
+S & r1 & 0.3469 & 0.3472 & 275.92 & 276.00 & 292.94 & 292.94 & 119.0 & 119.1 \\
+S & r2 & 0.3469 & 0.3472 & 275.96 & 276.00 & 292.93 & 292.94 & 119.0 & 119.1 \\
+C & r1 & 0.5282 & 0.5280 & 199.97 & 200.00 & 284.16 & 284.15 & 178.5 & 178.4 \\
+C & r2 & 0.5280 & 0.5280 & 200.00 & 200.00 & 284.16 & 284.16 & 178.4 & 178.4 \\
+C & r4 & 0.5286 & 0.5280 & 199.96 & 200.00 & 284.12 & 284.16 & 178.6 & 178.4 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Errores relativos en la sección de salida.}
+\label{tab:estado-salida-err}
+\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{llrrrr}
+\toprule
+Caso & Malla & Error $M_e$ [\%] & Error $p_e$ [\%] & Error $T_e$ [\%] & Error $V_e$ [\%] \\
+\midrule
+A & r1 & 0.01 & 0.17 & 0.02 & 0.00 \\
+A & r2 & 0.01 & 0.16 & 0.02 & 0.00 \\
+S & r1 & 0.08 & 0.03 & 0.00 & 0.08 \\
+S & r2 & 0.09 & 0.01 & 0.00 & 0.09 \\
+C & r1 & 0.03 & 0.01 & 0.00 & 0.03 \\
+C & r2 & 0.01 & 0.00 & 0.00 & 0.01 \\
+C & r4 & 0.10 & 0.02 & 0.01 & 0.10 \\
+\bottomrule
+\end{tabular}
+\end{table}

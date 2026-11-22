@@ -1,0 +1,31 @@
+\begin{table}[H]
+\centering
+\caption{Choque normal del caso C: posición y área en el choque.}
+\label{tab:choque-C}
+\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lcrrrrrrr}
+\toprule
+Malla & Ventana [s] & $x_s$ CFD [m] & $x_s$ teo. [m] & $x_s/L_d$ CFD & $x_s/L_d$ teo. & Error pos. [\% $L_d$] & $A_s/A_t$ CFD & $A_s/A_t$ teo. \\
+\midrule
+r1 & 0.03--0.06 & 0.1353 & 0.1346 & 0.6767 & 0.6731 & 0.36 & 1.4581 & 1.4552 \\
+r2 & 0.02--0.04 & 0.1352 & 0.1346 & 0.6761 & 0.6731 & 0.30 & 1.4576 & 1.4552 \\
+r4 & 0.012--0.02 & 0.1353 & 0.1346 & 0.6766 & 0.6731 & 0.35 & 1.4580 & 1.4552 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Estados antes ($1$, en $x_1=x_s-3\Delta x$) y después ($2$, en $x_2=x_s+3\Delta x$) del choque, medidos fuera de su espesor numérico, contra la teoría evaluada en las mismas posiciones.}
+\label{tab:choque-C-estados}
+\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Malla & $M_{s1}$ CFD & $M_{s1}$ teo. & $M_{s2}$ CFD & $M_{s2}$ teo. & $p_2/p_1$ CFD & $p_2/p_1$ teo. & $p_{02}/p_{01}$ CFD & $p_{02}/p_{01}$ teo. \\
+\midrule
+r1 & 1.785 & 1.792 & 0.590 & 0.589 & 3.597 & 3.619 & 0.8100 & 0.8061 \\
+r2 & 1.799 & 1.804 & 0.601 & 0.600 & 3.637 & 3.655 & 0.8099 & 0.8061 \\
+r4 & 1.801 & 1.810 & 0.605 & 0.606 & 3.642 & 3.671 & 0.8105 & 0.8061 \\
+\bottomrule
+\end{tabular}
+\end{table}
